@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aditya.projectapp.sta.TeacherFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/createGroupButton"
+        android:background="@drawable/custom_button_round"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:elevation="3dp"
+        android:src="@drawable/ic_create_group"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:layout_below="@id/createGroupButton"
+        android:text="Create Group"
+        />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/teacherStudymaterialButton"
+        android:layout_toRightOf="@id/text1"
+        android:src="@drawable/ic_study_material"
+        android:elevation="3dp"
+
+        android:background="@drawable/custom_button_round_yellowgrad"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:layout_below="@id/teacherStudymaterialButton"
+        android:layout_toRightOf="@id/text1"
+        android:text=" Study Material"
+        />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/teacherAssignmentButton"
+        android:layout_toRightOf="@id/text2"
+        android:background="@drawable/custom_button_round_assignment"
+        android:src="@drawable/ic_assignment"
+        android:elevation="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:layout_below="@id/teacherAssignmentButton"
+        android:layout_toRightOf="@id/text2"
+        android:text=" Assignments"
+        />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/teacherScanButton"
+        android:elevation="3dp"
+        android:layout_toRightOf="@id/text3"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/custom_button_round_scan"
+        android:src="@drawable/ic_scan"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text4"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:layout_below="@id/teacherScanButton"
+        android:layout_toRightOf="@id/text3"
+        android:text=" Quick Scan"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line1"
+        android:layout_below="@+id/text1"
+        android:background="#ededed" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text5"
+        android:padding="2dp"
+        android:background="#ededed"
+        android:textStyle="bold"
+        android:layout_below="@id/line1"
+        android:text=" Groups"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line2"
+        android:layout_below="@+id/text5"
+        android:background="#ededed" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:padding="4dp"
+        android:id="@+id/groupListRecylerView"
+        android:scrollbars="vertical"
+        />
+
+
+
+</RelativeLayout>

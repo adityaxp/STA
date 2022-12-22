@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadAssignmentActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/uploadAssignmentToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_gradient_alternate"
+        android:elevation="5dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/MenuStyle">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameTextView"
+        android:textSize="20sp"
+        android:text="Upload an assignment"
+        android:layout_marginLeft="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:layout_below="@+id/uploadAssignmentToolBar"
+            android:id="@+id/attachImageView"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/noimage"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            />
+
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/attachImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input_rectangle"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Enter a title"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/titleEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input_rectangle"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Enter description"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor" />
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/descriptionEditText"
+            android:layout_marginTop="20dp"
+            android:id="@+id/attachShareButton"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_login_button"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteTextView"
+            android:layout_below="@+id/attachShareButton"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+
+
+
+
+
+
+</RelativeLayout>

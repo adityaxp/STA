@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGroupActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/createGroupToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_gradient_alternate"
+        android:elevation="5dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/MenuStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNameTextView"
+            android:textSize="20sp"
+            android:text="Create a group"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/createGroupToolBar"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupImageRound"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/noimageround"
+        app:civ_border_color="#FF89D4CF"
+        app:civ_border_width="1dp" />
+
+        <ImageButton
+            android:id="@+id/selectImageGroupButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/groupImageRound"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="-41dp"
+            android:background="@drawable/custom_button_round_default"
+            android:src="@drawable/ic_scan"
+            android:textColor="@android:color/white"
+            />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectImageGroupButton"
+        android:layout_marginTop="30dp"
+        android:id="@+id/groupNameEditText"
+        android:background="@drawable/custom_input_rectangle"
+        android:padding="10dp"
+        android:hint="Group Name"
+        android:maxLength="30"
+        android:maxLines="2"
+        android:drawableStart="@drawable/custom_group_icon"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupNameEditText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/groupKeyEditText"
+        android:background="@drawable/custom_input_rectangle"
+        android:padding="10dp"
+        android:editable="false"
+        android:textIsSelectable="true"
+        android:hint="Group Key"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:drawableStart="@drawable/custom_password_icon"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/genrateRandomKeyButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/groupKeyEditText"
+        android:background="@drawable/custom_login_button"
+        android:text="Generate a Random Key"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/createGroupButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/genrateRandomKeyButton"
+        android:background="@drawable/custom_login_button"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        />
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

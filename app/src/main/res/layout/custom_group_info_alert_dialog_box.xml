@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_close"
+        android:padding="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Group Info"
+        android:textStyle="bold"
+        android:id="@+id/text1"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_below="@id/text1"
+        android:layout_alignStart="@id/text1"
+        android:text="Group name :"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupNameTextView"
+        android:layout_below="@id/text2"
+        android:layout_alignStart="@id/text1"
+        android:text="group name"
+        android:textSize="20sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/groupNameTextView"
+        android:layout_alignStart="@id/text1"
+        android:text="Group admin :"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupAdminTextView"
+        android:layout_below="@id/text3"
+        android:layout_alignStart="@id/text1"
+        android:text="group admin"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/groupAdminTextView"
+        android:layout_alignStart="@id/text1"
+        android:text="Group Key :"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupKeyTextView"
+        android:layout_below="@id/text4"
+        android:layout_alignStart="@id/text4"
+        android:text="group key"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/copyButton"
+        android:layout_alignBaseline="@id/groupKeyTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/groupKeyTextView"
+        android:background="@drawable/ic_copy"
+        />
+
+
+
+</RelativeLayout>

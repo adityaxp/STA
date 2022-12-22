@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aditya.projectapp.sta.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/whatsNewCardView"
+        app:cardElevation="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="What's New?"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/instituteCardView"
+        android:layout_below="@id/whatsNewCardView"
+        app:cardElevation="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+        <WebView
+         android:layout_width="match_parent"
+         android:id="@+id/instituteWebView"
+         android:layout_height="200dp">
+         </WebView>
+
+        <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:text="Institute Updates"
+         android:padding="10dp"
+         android:textSize="18sp"
+         />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/reportBugCardView"
+        android:layout_below="@id/instituteCardView"
+        app:cardElevation="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bug"
+            android:src="@drawable/bug"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Report a bug"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+    </androidx.cardview.widget.CardView>
+
+
+     </RelativeLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aditya.projectapp.sta">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".StarterApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".STAQuickScanActivity"/>
+        <activity android:name=".AssessmentActivity" />
+        <activity android:name=".HandInAssignmentActivity" />
+        <activity android:name=".AssignmentActivityStudentEnd" />
+        <activity android:name=".UploadAssignmentActivity" />
+        <activity android:name=".SelectGroupForAssignment" />
+        <activity android:name=".AssignmentActivityTeacherEnd" />
+        <activity android:name=".PdfViewActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".UploadStudyMaterialActivity" />
+        <activity android:name=".StudyMaterialTeacherEndActivity" />
+        <activity android:name=".StudyMaterialStudentEndActivity" />
+        <activity android:name=".SelectGroupForStudyMaterial" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:configChanges="screenSize|screenLayout|orientation"
+            android:supportsPictureInPicture="true"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".CreateGroupActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity android:name=".STAHomeActivity" />
+        <activity android:name=".SelectInstituteActivity" />
+        <activity android:name=".InstituteDescriptionActivity" />
+        <activity android:name=".RegisterInstituteActivity" />
+    </application>
+
+</manifest>

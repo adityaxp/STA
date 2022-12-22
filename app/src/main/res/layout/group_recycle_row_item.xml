@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="3dp"
+    android:id="@+id/groupCardView"
+    android:layout_marginBottom="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:padding="2dp"
+            app:civ_border_width="0.1dp"
+            app:civ_border_color="#FF89D4CF"
+            android:id="@+id/groupImage"
+            android:src="@drawable/noimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8sp"
+            android:id="@+id/groupName"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/groupImage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="recent message"
+            android:maxLines="1"
+            android:layout_toEndOf="@id/groupImage"
+            android:layout_below="@id/groupName"
+            android:layout_marginStart="8sp"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

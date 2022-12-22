@@ -1,0 +1,2 @@
+include ':scanlibrary'
+include ':app'

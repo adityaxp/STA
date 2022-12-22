@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "68846030280",
+    "firebase_url": "https://sta-app-bcee8.firebaseio.com",
+    "project_id": "sta-app-bcee8",
+    "storage_bucket": "sta-app-bcee8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68846030280:android:572c4ff8ad456be8ab44fd",
+        "android_client_info": {
+          "package_name": "com.aditya.projectapp.sta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68846030280-pmurujtn5naio636bhremogqpk0cojl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9EExqTMw-aQAixo-g8NMcDMcJV_8XHBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68846030280-pmurujtn5naio636bhremogqpk0cojl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

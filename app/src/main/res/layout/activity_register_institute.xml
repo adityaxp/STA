@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aditya.projectapp.sta.RegisterInstituteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/instituteImageRound"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/noimageround"
+        app:civ_border_color="#FF89D4CF"
+        app:civ_border_width="1dp" />
+
+
+        <ImageButton
+            android:id="@+id/selectImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/instituteImageRound"
+            android:layout_alignStart="@id/instituteImageRound"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="-41dp"
+            android:background="@drawable/custom_button_round_default"
+            android:onClick="selectImage"
+            android:src="@drawable/ic_scan"
+            android:textColor="@android:color/white" />
+
+        <EditText
+        android:id="@+id/registerNameEditText"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/instituteImageRound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input_rectangle"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Enter institute name"
+        android:inputType="textMultiLine"
+        android:maxLength="60"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:textCursorDrawable="@drawable/custom_cursor" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/domainRegisterEditText"
+        android:layout_alignStart="@id/registerNameEditText"
+        android:layout_below="@id/registerNameEditText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input_rectangle"
+        android:hint="Enter institute domain"
+        android:inputType="textWebEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:id="@+id/descriptionRegisterEditText"
+        android:layout_alignStart="@id/registerNameEditText"
+        android:layout_below="@id/domainRegisterEditText"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:maxLength="300"
+        android:background="@drawable/custom_input_rectangle"
+        android:hint="Enter institute description"
+        android:gravity="top"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionRegisterEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_login_button"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:onClick="registerInstitute"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_marginBottom="20dp"
+        />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

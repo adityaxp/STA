@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:elevation="3dp"
+    android:id="@+id/assessmentCardView"
+    android:layout_marginBottom="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="2dp"
+            app:civ_border_width="0.1dp"
+            app:civ_border_color="#FF89D4CF"
+            android:id="@+id/fileTypeImage"
+            android:src="@drawable/imageicon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8sp"
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/fileTypeImage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:maxLines="2"
+            android:layout_toEndOf="@id/fileTypeImage"
+            android:layout_below="@id/title"
+            android:layout_marginStart="8sp"
+            android:layout_marginBottom="10dp"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/approveButton"
+            android:layout_below="@+id/description"
+            android:text="Approve"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:background="@drawable/custom_login_button"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

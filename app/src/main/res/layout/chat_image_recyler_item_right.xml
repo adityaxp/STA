@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@id/profile_image"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_message"
+        android:visibility="gone"
+        />
+
+    
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:id="@+id/SentImage"
+        android:background="@drawable/background_right"
+        android:src="@drawable/noimage"
+        android:layout_alignParentRight="true"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:id="@+id/senderName"
+            android:text="sent by"
+            android:layout_below="@id/SentImage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/time"
+            android:textAlignment="textEnd"
+            android:text="time"
+            android:layout_below="@id/senderName"/>
+
+
+</RelativeLayout>

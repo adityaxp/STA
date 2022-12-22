@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f2f0f0"
+    tools:context=".GroupChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/groupActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_gradient_alternate"
+        android:elevation="5dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/MenuStyle">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:id="@+id/groupChatImage"
+            android:src="@drawable/noimage"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/groupNameTextView"
+            android:textSize="20sp"
+            android:text="Group Name"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/groupChatScrollView"
+        android:fillViewport="true"
+        android:layout_below="@id/groupActionBar"
+        android:layout_above="@id/bottomLayout"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/messageListRecylerView"
+        />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="7dp"
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageEditText"
+        android:background="@drawable/custom_input"
+        android:hint="Type a message..."
+        android:padding="12dp"
+        android:drawableEnd="@drawable/custom_clip_icon"
+        android:drawablePadding="10dp"
+        android:layout_toLeftOf="@id/sendMessageButton"
+        android:layout_centerVertical="true"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_send"
+        android:layout_marginTop="2dp"
+        android:id="@+id/sendMessageButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

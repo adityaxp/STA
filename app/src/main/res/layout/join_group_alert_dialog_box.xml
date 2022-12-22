@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_close"
+        android:padding="15dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textJoinGroup"
+        android:text="Join Group"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textJoinGroup"
+        android:layout_marginTop="20dp"
+        android:id="@+id/joinGroupKeyEditText"
+        android:background="@drawable/custom_input_rectangle"
+        android:padding="10dp"
+        android:hint="Enter group key"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:drawableStart="@drawable/custom_password_icon"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/joinGroupKeyEditText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/joinButton"
+        android:text="Join"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

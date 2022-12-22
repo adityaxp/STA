@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose an app"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/zoom"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text"
+        android:src="@drawable/ic_zoom"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/zoom"
+        android:text="Zoom"
+        android:id="@+id/zoomButton"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/googleMeet"
+        android:layout_margin="10dp"
+        android:layout_below="@id/zoom"
+        android:src="@drawable/ic_googlemeet"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/googleMeet"
+        android:text="Google Meet"
+        android:textSize="20dp"
+        android:id="@+id/googleMeetButton"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/zoomButton"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:id="@+id/ciscoWebex"
+        android:layout_margin="10dp"
+        android:layout_below="@id/googleMeet"
+        android:src="@drawable/ic_webex"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/googleMeet"
+        android:text="Cisco Webex"
+        android:textSize="20dp"
+        android:id="@+id/ciscoWebexButton"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/googleMeetButton"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/msTeams"
+        android:layout_margin="10dp"
+        android:layout_below="@id/ciscoWebex"
+        android:src="@drawable/ic_msteams"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/ciscoWebex"
+        android:text="Microsoft Teams"
+        android:textSize="20dp"
+        android:id="@+id/msTeamsButton"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/ciscoWebexButton"
+        />
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
+        android:id="@+id/skype"
+        android:layout_margin="10dp"
+        android:layout_below="@id/msTeams"
+        android:src="@drawable/ic_skype"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@id/ciscoWebex"
+        android:text="Skype"
+        android:textSize="20dp"
+        android:id="@+id/skypeButton"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_below="@id/msTeamsButton"
+        />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

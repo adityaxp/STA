@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/userProfileActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_gradient_alternate"
+        android:elevation="5dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/MenuStyle">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNameTextView"
+            android:textSize="20sp"
+            android:text="User Profile"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userProfileActionBar">
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:id="@+id/content"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImageRound"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/defaultuser"
+        app:civ_border_color="#FF89D4CF"
+        app:civ_border_width="1dp" />
+
+    <ImageButton
+        android:id="@+id/updateImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@id/userImageRound"
+        android:layout_below="@id/userImageRound"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="-48dp"
+        android:background="@drawable/custom_button_round_default"
+        android:src="@drawable/ic_scan"
+        android:textColor="@android:color/white" />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImageRound"
+        android:layout_marginTop="10dp"
+        android:id="@+id/userNameEditText"
+        android:layout_alignStart="@id/userImageRound"
+        android:padding="10dp"
+        android:text="userName"
+        android:enabled="false"
+        android:background="@drawable/custom_input_rectangle"
+        android:drawableStart="@drawable/custom_account_icon"
+        android:drawablePadding="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/editProfileNameButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_alignTop="@id/userNameEditText"
+        android:layout_toEndOf="@id/userNameEditText"
+        android:background="@drawable/custom_button_round_default"
+        android:src="@drawable/ic_edit"
+        android:textColor="@android:color/white" />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameEditText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/emailEditText"
+        android:layout_alignStart="@id/userNameEditText"
+        android:padding="10dp"
+        android:text="email"
+        android:enabled="false"
+        android:background="@drawable/custom_input_rectangle"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/editEmailButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_alignTop="@id/emailEditText"
+        android:layout_toEndOf="@id/emailEditText"
+        android:background="@drawable/custom_button_round_default"
+        android:src="@drawable/ic_edit"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/accountTypeEditText"
+        android:layout_alignStart="@id/emailEditText"
+        android:padding="10dp"
+        android:text="accountType"
+        android:enabled="false"
+        android:background="@drawable/custom_input_rectangle"
+        android:drawableStart="@drawable/custom_account_type_icon"
+        android:drawablePadding="10dp"
+        />
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountTypeEditText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/instituteEditText"
+        android:layout_alignStart="@id/accountTypeEditText"
+        android:padding="10dp"
+        android:text="instituteName"
+        android:enabled="false"
+        android:background="@drawable/custom_input_rectangle"
+        android:drawableStart="@drawable/custom_institute_icon"
+        android:drawablePadding="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/editInstituteButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_alignTop="@id/instituteEditText"
+        android:layout_toEndOf="@id/instituteEditText"
+        android:background="@drawable/custom_button_round_default"
+        android:src="@drawable/ic_edit"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/saveProfileButton"
+        android:layout_below="@id/instituteEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Save Profile"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@android:color/white"
+        />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

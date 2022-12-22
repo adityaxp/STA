@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aditya.projectapp.sta.SelectInstituteActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/custom_gradient"
+            android:id="@+id/instituteSearchBar"
+            android:elevation="2dp">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/intituteSearchEditText"
+                android:background="@drawable/custom_input_rectangle"
+                android:padding="10dp"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:hint="Search for your institute.."/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/helpButton"
+                android:layout_marginLeft="315dp"
+                android:background="@drawable/ic_help"
+                android:layout_marginTop="4dp" />
+
+
+        </RelativeLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instituteSearchBar"
+        android:id="@+id/instituteListRecylerView"
+        android:scrollbars="vertical"
+        />
+
+
+</RelativeLayout>

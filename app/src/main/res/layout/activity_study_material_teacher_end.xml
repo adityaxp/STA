@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyMaterialTeacherEndActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/studyToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/custom_gradient_alternate"
+        android:elevation="5dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:popupTheme="@style/MenuStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userNameTextView"
+            android:textSize="20sp"
+            android:text="Study Material"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studyToolBar"
+        android:padding="4dp"
+        android:id="@+id/studyMaterialListRecyclerView"
+        android:scrollbars="vertical"
+        />
+
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_below="@id/studyToolBar"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="#89D4CF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fab_expandDirection="up"
+        app:fab_labelsPosition="left"
+        app:fab_labelStyle="@style/LabelStyle">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_colorNormal="#FFF"
+            android:id="@+id/docxButton"
+            app:fab_icon="@drawable/float_docx"
+            app:fab_size="mini"
+            app:fab_title="docx"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_size="mini"
+            android:id="@+id/pdfButton"
+            app:fab_icon="@drawable/float_pdf"
+            app:fab_title="pdf"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_colorNormal="#FFF"
+            android:id="@+id/imageButton"
+            app:fab_icon="@drawable/float_image"
+            app:fab_size="mini"
+            app:fab_title="image"/>
+
+
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

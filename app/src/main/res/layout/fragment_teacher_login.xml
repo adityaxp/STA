@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aditya.projectapp.sta.TeacherLoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/emailUsernameEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailUsernameEditText"
+        android:layout_alignStart="@id/emailUsernameEditText"
+        android:layout_marginTop="30dp"
+        app:passwordToggleEnabled="true"
+        app:hintEnabled="false"
+        app:passwordToggleTint="@android:color/darker_gray">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:padding="12dp"
+            android:hint="Password"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:drawablePadding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:textSize="17dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_login_button"
+        android:text="Log In" />
+
+    <TextView
+        android:id="@+id/needHelpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/passwordEditText"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginEnd="14dp"
+        android:clickable="true"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginTop="5dp"
+        android:text="Need Help?"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/newUserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/passwordEditText"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="10dp"
+        android:text="Not a member?" />
+
+    <TextView
+        android:id="@+id/registerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newUserTextView"
+        android:layout_alignBottom="@+id/newUserTextView"
+        android:layout_toEndOf="@+id/newUserTextView"
+        android:text=" Sign Up"
+        android:clickable="true"
+        android:textColor="@android:color/holo_blue_light"
+        android:focusable="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignTop="@id/instituteTextView"
+        />
+
+    <TextView
+        android:id="@+id/instituteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/newUserTextView"
+        android:paddingTop="7dp"
+        android:layout_marginBottom="12dp"
+        android:text="Want to register your institute to STA?" />
+
+    <TextView
+        android:id="@+id/clickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:layout_alignBaseline="@+id/instituteTextView"
+        android:clickable="true"
+        android:layout_alignBottom="@+id/instituteTextView"
+        android:layout_toEndOf="@+id/instituteTextView"
+        android:text=" Register"
+        android:textColor="@android:color/holo_blue_light"
+        android:focusable="true" />
+</RelativeLayout>

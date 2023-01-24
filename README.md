@@ -1,10 +1,6 @@
 # STA v1.0
 
-The STA (Student Teacher App) is an
-application platform which provides an efficient
-and a reliable way for students and teachers to
-interact with each other. The STA 
-the platform can be used for sharing study material, assignment submission, assessment and to receive various updates from the institute. 
+The STA (Student Teacher App) is an application platform that provides an efficient and reliable way for students and teachers to interact with each other. The STA platform can be used for sharing study material, assignment submissions, assessments, and receiving various updates from the institute.
 
 # Screenshots
 

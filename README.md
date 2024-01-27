@@ -11,3 +11,5 @@ The STA (Student Teacher App) is an application platform that provides an effici
 # STA Signed APK's
 
 https://drive.google.com/drive/folders/1lByRRssWUJavnMp2PsO-WyNUyeX3--rz?usp=sharing
+
+<hr>
